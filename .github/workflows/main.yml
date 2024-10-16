@@ -1,0 +1,32 @@
+  - name: Huawei Cloud OBS Helper Action
+  # You may pin to the exact commit or the version.
+  # uses: huaweicloud/obs-helper@023a98bd751f8c34dd8243e256fe72ccae421fba
+  uses: huaweicloud/obs-helper@v1.0.0
+  with:
+    # Access key id
+    access_key:  ${{ secrets.ACCESSKEY }} 
+    # Secret access key
+    secret_key:  ${{ secrets.SECRETACCESSKEY }}
+    # Region  # optional, default is cn-north-4
+    region: ap-southeast-2
+    # The name of the bucket
+    bucket_name:  andreani-poc
+    # Use 'download' to download object from obs, use 'upload' to upload object to obs, use 'createbucket' to create a new bucket, and use 'deletebucket' to delete a bucket.
+    operation_type: upload
+    # Local file/folder path
+    local_file_path:  /
+    # The file/folder path of obs bucket
+    obs_file_path: /git_testNoteBookPublic
+    # Include root folder when upload or download
+    include_self_folder: # optional
+    # Exclude file or folder when download a folder
+    exclude: # optional
+    # Whether to enable the public read permission of the bucket.
+    public_read: # optional
+    # Bucket storage class that can be specified during the bucket creation
+    storage_class: # optional
+    # Whether to delete all objects and parts in the bucket
+    clear_bucket: # optional, default is true
+
+
+          
