@@ -15,7 +15,8 @@ jobs:
           region: 'ap-southeast-2'
         
       - name: Upload File to OBS
-        uses: huaweicloud/obs-helper@v1.4.0
+        uses: huaweicloud/obs-helper@v1.0.0
+        # uses: huaweicloud/obs-helper@v1.4.0
         id: upload_file_to_obs
         with:
           bucket_name: 'andreani-poc'
