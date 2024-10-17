@@ -18,8 +18,8 @@ jobs:
         uses: huaweicloud/obs-helper@v1.4.0
         id: upload_file_to_obs
         with:
-          bucket_name: '<bucket-name>'
-          local_file_path: ./
+          bucket_name: 'andreani-poc'
+          local_file_path: ./src/
           # ./resource/upload/file1.txt
           obs_file_path: git_testNoteBookPublic/src/
           operation_type: upload
